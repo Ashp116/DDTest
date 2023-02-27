@@ -9,11 +9,11 @@ import {
 } from 'discord.js';
 import * as fs from "fs";
 import {config} from "dotenv"
-config()
 const { REST } = require('@discordjs/rest');
 
 
 const doc: GoogleSpreadsheet = new GoogleSpreadsheet('1QncPrNNsmINTNtmmtun5mXwmkV8p3efwCcyLXmLSXhU');
+console.log(process.env.Token)
 const key = process.env.key
 const Token = process.env.Token
 const rest = new REST({ version: '10' }).setToken(Token);
