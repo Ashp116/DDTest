@@ -1,0 +1,27 @@
+{
+  "name": "ddtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./out/Bot.js",
+  "scripts": {
+    "start": "node .",
+    "build": "npx tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashp116/DDTest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ashp116/DDTest/issues"
+  },
+  "homepage": "https://github.com/Ashp116/DDTest#readme",
+  "dependencies": {
+    "@types/dotenv": "^8.2.0",
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3",
+    "google-spreadsheet": "^3.3.0",
+    "typescript": "^4.9.5"
+  }
+}
