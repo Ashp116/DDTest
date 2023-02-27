@@ -6,7 +6,6 @@ import {
     SlashCommandBuilder,
     Embed, EmbedBuilder, GuildMember, ActionRowBuilder, ButtonBuilder, ButtonStyle, TextChannel, CacheTypeReducer
 } from "discord.js";
-import fetch from 'node-fetch'
 
 const commandName = "verify"
 

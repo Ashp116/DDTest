@@ -26,7 +26,7 @@ doc.useApiKey(key);
 let commandsUtil = {}
 let commandsRegister = []
 
-fs.readdir("./out/src/Commands/", (err, files) => {
+fs.readdir("./out/Commands/", (err, files) => {
  if (err) console.error(err);
 
  let jsfiles = files.filter(f => f.split(".").pop() === "js");
