@@ -148,8 +148,6 @@ client.on('interactionCreate', async interaction => {
       
       *Any problems please contact <@1079558175524671508>*
       `)
-
-  console.log(interaction.commandName.toLowerCase())
   // @ts-ignore
   //client.guilds.cache.get("1079556613578444800").channels.cache.get("1079577143081717800").send({embeds: [embed]})
   const command: Command = commandsUtil[interaction.commandName.toLowerCase()]
