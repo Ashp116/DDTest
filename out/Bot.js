@@ -12,11 +12,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const google_spreadsheet_1 = require("google-spreadsheet");
 const discord_js_1 = require("discord.js");
 const fs = require("fs");
-const config_1 = require("../../config");
+const dotenv_1 = require("dotenv");
+(0, dotenv_1.config)();
 const { REST } = require('@discordjs/rest');
 const doc = new google_spreadsheet_1.GoogleSpreadsheet('1QncPrNNsmINTNtmmtun5mXwmkV8p3efwCcyLXmLSXhU');
-const key = config_1.config.BBVerifier.key;
-const Token = config_1.config.BBVerifier.Token;
+const key = process.env.key;
+const Token = process.env.Token;
 const rest = new REST({ version: '10' }).setToken(Token);
 const client = new discord_js_1.Client({ intents: [discord_js_1.GatewayIntentBits.Guilds, discord_js_1.GatewayIntentBits.GuildMembers, discord_js_1.GatewayIntentBits.MessageContent, discord_js_1.GatewayIntentBits.GuildInvites, discord_js_1.GatewayIntentBits.GuildMessageReactions, discord_js_1.GatewayIntentBits.GuildMessages, discord_js_1.GatewayIntentBits.DirectMessages],
     partials: [discord_js_1.Partials.Message, discord_js_1.Partials.Channel, discord_js_1.Partials.Reaction] });

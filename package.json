@@ -2,7 +2,7 @@
   "name": "ddtest",
   "version": "1.0.0",
   "description": "",
-  "main": "./out/Bot.js",
+  "main": "./out/index.js",
   "scripts": {
     "start": "node .",
     "build": "npx tsc"
